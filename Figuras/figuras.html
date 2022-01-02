@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas - Curso JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class = "logo">
+            <img src="./assets/logo.png" alt="Logo" class="logo_icon">
+        <h1 class="logo_title">Figuras Geométricas</h1>
+        <p class="logo_subtitle">Calcula el perimerto y el área de estas figuras.</p>
+        </div>
+        
+    </header>
+    <div class="background">
+        <div class="blur blur--color"></div>
+        <div class="blur blur--color-2"></div>
+        <div class="blur blur--color-3"></div>
+        <div class="blur blur--color-4"></div>
+        <div class="blur blur--blue"></div>
+        <div class="blur blur--blue-2"></div>
+        <div class="blur blur--blue-3"></div>
+    </div>
+    <main class="main">
+    <section class="content">
+        <div class="box-content">
+            <div class="left">
+                <h2 class="box-content__title">Cuadrado</h2>
+                <p class="box-content__text">Ingresa las medidas del cuadrado y presiona el boton “calcular”.</p>
+                <form class= "form" action="">
+                    <label class="label" for="inputCuadrado">Tamaño de Lado:</label>
+                    <div class="units">
+                        <input id="inputCuadrado" type="number" class="input-data" placeholder="Ingresa Lado">
+                        <span class="input-1__span">cm</span>
+                    </div>
+                </form>
+                    <div class="botones">
+                        <br><button class="btn" type="button" onclick="squarePerimeter()">Calcular Perímetro</button>
+                        <br><button class="btn" type="button"onclick="squareArea()">Calcular Área</button>
+                    </div>
+        </div>
+        </div>
+    </section>
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>
